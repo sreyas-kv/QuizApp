@@ -1,0 +1,267 @@
+*{
+  border:0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html{
+  background: url("https://images.pexels.com/photos/698327/pexels-photo-698327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed; 
+  background-size: cover;
+}
+body{
+  font-family: 'Love Ya Like A Sister';
+  color: white;
+}
+
+.col-8{
+  /*padding: 30px 0px 10px auto;*/
+  /*border: 2px solid #c4c5c6;*/
+  text-align: center;
+}
+header{
+  /*padding: 30px 0px 10px auto;*/
+  text-align: center;
+  /*border: 2px solid #c4c5c6;*/
+}
+h1{
+  padding: 10px;
+  text-align: center;
+}
+
+h2{
+  font-size: 20px;
+}
+
+.container{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  }
+
+.startButton{
+  margin: 50px 0px 0px auto;
+  background-color: #444549; 
+  border-radius: 3px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Love Ya Like A Sister';
+  font-weight: bold;
+}
+
+input[type=radio] {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+input:checked {
+  border: 8px solid #ffffff;
+}
+
+ul li{
+  list-style-type: none;
+  padding-left: 20px;
+  
+}
+
+.questionAnswerForm {
+  display: none;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid #c4c5c6;
+  margin: 40px auto;
+  background-color: rgba(300, 255, 300, 0.3);
+  
+  }
+
+
+h2 {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #ffffff;
+  /*text-transform: uppercase*/
+}
+
+input[type=radio] {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.answer {
+  flex: 1 1 auto;
+}
+
+
+main div {
+  margin: 0 auto;
+}
+label:nth-child(1) {
+  
+}
+label:nth-child(2) {
+  
+}
+label:nth-child(3) {
+  
+}
+label:nth-child(4) {
+  
+}
+label {
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  color: #ffffff;
+  /*text-transform: uppercase;*/
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  line-height: 22px
+}
+label:hover, label:focus {
+  background-color: #444549
+}
+fieldset {
+  border: none;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+form button {
+  padding: 15px 32px;
+  border: none;
+  font-family: 'Love Ya Like A Sister';
+  background-color: #ffffff;
+  color: #4b4c4f;
+  font-size: 16px;
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+}
+
+.correctFeedback {
+  display: block;
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  /*padding-top: 40px;*/
+  /*width: 50%;*/
+  padding: 10px;
+  /*border: 2px solid #c4c5c6;*/
+  /*margin: 40px auto;*/
+}
+
+.correctFeedback span {
+    color: #ffffff;
+}
+.correctFeedback img {
+  width: 400px;
+  height: 296px;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px
+}
+.correctFeedback button {
+  padding: 15px 32px;
+  font-family: 'Love Ya Like A Sister';
+  color: #4b4c4f;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  font-weight: bold;
+  
+}
+.correctFeedback p {
+  font-zide: 20px;
+  line-height: 1.5em;
+  /*text-transform: uppercase;*/
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+@media screen and (max-width: 1190px) {
+  .questionAnswerForm,
+  .container {
+    width: 80%;
+    margin-bottom: 100px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  header ul {
+    margin: 10px;
+    text-align: center
+    
+  }
+  h1 {
+    font-size: 1.5em
+    
+  }
+  header ul li {
+    padding: 10px;
+    font-size: 18px
+    
+  }
+  .header-div,
+  .col-8 {
+    width: 100%
+    
+  }
+  .quizStart {
+    width: 100%;
+    padding: 40px;
+    margin-top: 0
+    
+  }
+  h2 {
+    font-size: 18px
+    
+  }
+  .questionAnswerForm {
+    width: 100%;
+    padding: 20px;
+    margin-top: 0
+    
+  }
+  label {
+    font-size: 16px;
+    padding: 15px
+    
+  }
+  .correctFeedback img {
+    width: 100px;
+    height: auto;
+    
+  }
+  .correctFeedback p {
+    font-size: 16px;
+    margin: 0 15px
+  }
+  .results p:first-of-type {
+    font-size: 18px
+  }
+  h3 {
+    font-size: 25px
+  }
+}
