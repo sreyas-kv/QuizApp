@@ -5,26 +5,26 @@ function generateQuestion(){
   if(questionNumber < STORE.length){
     return `<div class="question ${questionNumber}">
     <h2>${STORE[questionNumber].question}</h2>
-    <form role="questions">
+    <form role="question form">
     <fieldset>
     <legend> Choose the correct answer from the below options:</legend>
     <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answer[0]}" name="answer" required>
+    <input type="radio" role="options" value="${STORE[questionNumber].answer[0]}" name="answer" required>
     <span>${STORE[questionNumber].answer[0]}</span>
     </label>
     <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answer[1]}" name="answer" required>
+    <input type="radio" role="options" value="${STORE[questionNumber].answer[1]}" name="answer" required>
     <span>${STORE[questionNumber].answer[1]}</span>
     </label>
     <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answer[2]}" name="answer" required>
+    <input type="radio" role="options" value="${STORE[questionNumber].answer[2]}" name="answer" required>
     <span>${STORE[questionNumber].answer[2]}</span>
     </label>
     <label class="answerOption">
-    <input type="radio" value="${STORE[questionNumber].answer[3]}" name="answer" required>
+    <input type="radio" role="options" value="${STORE[questionNumber].answer[3]}" name="answer" required>
     <span>${STORE[questionNumber].answer[3]}</span>
     </label>
-    <button type="submit" class="submitButton">Submit</button>
+    <button type="submit" class="submitButton" role="button">Submit</button>
     </fieldset>
     </form>
     </div>`;
